@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os
+from keep_alive import keep_alive
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -31,3 +32,4 @@ for filename in os.listdir('./commands'):
 
 token = os.getenv("Token")
 bot.run(token)
+keep_alive()
