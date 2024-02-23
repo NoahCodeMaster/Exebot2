@@ -30,7 +30,7 @@ for filename in os.listdir('./commands'):
     if filename.endswith('.py'):
         bot.load_extension(f'commands.{filename[:-3]}')
 
-token = os.getenv("TOKEN")
+token = os.getenv("Token")
 bot.run(token)
 
 
